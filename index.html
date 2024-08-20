@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+           
+            <input type="text" id="invoiceNo" name="invoiceNo" placeholder="नं." class="small-input">
+            <h2 class="section-heading">ऑफिसेट विभाग</h2>
+            <div class="date">
+                <label for="date">दिनांक</label>
+                <input type="date" id="date" name="date">
+            </div>
+        </div>
+
+        <!-- First Section -->
+        <div class="section office-department">
+            <!-- First Row -->
+            <div class="field-group">
+                <label for="partyName">पार्टी का नाम</label>
+                <input type="text" id="partyName" placeholder="प्रवीण धाकड़ " name="partyName" required>
+
+                <label for="jobHeading">जब का हेडिंग</label>
+                <select id="paperType" name="paperType">
+                    <option value="type1">एडमिशन फॉर्म १</option>
+                    <option value="type2">एडमिशन फॉर्म २</option>
+                </select>
+                
+            </div>
+
+            <!-- Second Row -->
+            <div class="field-group">
+                <label for="partyAddress">पार्टी का पता</label>
+                <input type="text" id="partyAddress" placeholder="४०१ मानल सिटी" name="partyAddress" required>
+
+                <label for="partyPhone">फोन</label>
+                <input type="text" id="partyPhone" placeholder="083********" name="partyPhone">
+
+                <label for="partyMobile">मो.</label>
+                <input type="text" id="partyMobile" placeholder="083********" name="partyMobile">
+            </div>
+
+            <!-- Third Row -->
+            <div class="field-group">
+                <label for="paperType">पेपर का टाइप</label>
+                <select id="paperType" name="paperType">
+                    <option value="type1">प्रकार १</option>
+                    <option value="type2">प्रकार २</option>
+                </select>
+
+                <label for="paperQuality">पेपर क्वालिटी</label>
+                <select id="paperQuality" name="paperQuality">
+                    <option value="quality1">गुणवत्ता १</option>
+                    <option value="quality2">गुणवत्ता २</option>
+                </select>
+
+                <label for="paperSize">पेपर साईज</label>
+                <select id="paperSize" name="paperSize">
+                    <option value="size1">आकार १</option>
+                    <option value="size2">आकार २</option>
+                </select>
+            </div>
+
+            <!-- Fourth Row -->
+            <div class="field-group">
+                <label for="printingInkColor">प्रिटिंग इंक - कलर </label>
+                <select id="printingInkColor" name="printingInkColor">
+                    <option value="color1">रंग १</option>
+                    <option value="color2">रंग २</option>
+                </select>
+
+                <label for="color1">कलर (1)</label>
+                <select id="color1" name="color1">
+                    <option value="colorपीकॉक ब्लू</option>
+                    <option value="color2">रंग २</option>
+                </select>
+
+                <label for="color2">कलर (2)</label>
+                <select id="color2" name="color2">
+                    <option value="colorपीकॉक ब्लू</option>
+                    <option value="color2">रंग २</option>
+                </select>
+
+                <label for="color3">कलर (3)</label>
+                <select id="color3" name="color3">
+                    <option value="color1">रंग १</option>
+                    <option value="color2">रंग २</option>
+                </select>
+            </div>
+
+            <!-- Fifth Row -->
+            <div class="field-group">
+                <label for="print">प्रिंट</label>
+                <select id="print" name="print">
+                    <option value="print1">आगे पीछे</option>
+                    <option value="print2">प्रिंट २</option>
+                </select>
+
+                <label for="remarks">रिमार्क</label>
+                <input type="text" id="remarks" name="remarks">
+
+                <label for="count">छपाई संख्या</label>
+                <input type="number" id="count" name="count">
+            </div>
+        </div>
+
+        <!-- Additional Heading -->
+        <h3 class="section-heading">(बाईडिंग विभाग)</h3>
+        <!-- First--> 
+         <div class="field-group">
+                <label for="printingInkColor">बाईडिंग</label>
+                <select id="printingInkColor" name="printingInkColor">
+                    <option value="color1">साइड बाईडिंग</option>
+                    <option value="color2">साइड बाईडिंग २</option>
+                </select>
+
+                <label for="color1">बाइडिंग कैसी</label>
+                <select id="color1" name="color1">
+                    <option value="color1">सिंगल कॉपी१</option>
+                    <option value="color2">सिंगल कॉपी२</option>
+                </select>
+
+                <label for="color2">सेट</label>
+                <select id="color2" name="color2">
+                    <option value="color1">50 का सेट</option>
+                    <option value="color2">50 का सेट २</option>
+                </select>
+
+                <label for="color3">बाईडिंग टाइप</label>
+                <select id="color3" name="color3">
+                    <option value="color1">सादी बाईडिंग १</option>
+                    <option value="color2">सादी बाईडिंग २</option>
+                </select>
+            </div>
+
+      
+         <!-- Second-->
+        <div class="field-group">
+            <label for="partyAddress">साईज</label>
+            <input type="text" id="partyAddress" name="partyAddress" required>
+
+            <label for="partyPhone">टोटल बुक</label>
+            <input type="text" id="partyPhone" name="partyPhone">
+
+            <label for="partyMobile">नंबरिंग कहा से</label>
+            <input type="text" id="partyMobile" name="partyMobile">
+
+
+            <label for="partyMobile">नंबरिंग कहा तक</label>
+            <input type="text" id="partyMobile" name="partyMobile">
+
+
+            
+        </div>
+        <!-- third-->
+        <div class="field-group">
+            <label for="print">कॉपी कलर (1)</label>
+            <select id="print" name="print">
+                <option value="print1">पीकॉक ब्लू</option>
+                <option value="print2">प्रिंट २</option>
+            </select>
+
+            <select id="corner">
+                <option value="print1">परफोरेशन</option>
+                <option value="print2">प्रिंट २</option>
+            </select>
+        </div>
+        <div class="field-group">
+            <label for="print">कॉपी कलर (2)</label>
+            <select id="print" name="print">
+                <option value="print1">पीकॉक ब्लू</option>
+                <option value="print2">प्रिंट २</option>
+            </select>
+
+            <select id="corner">
+                <option value="print1">परफोरेशन</option>
+                <option value="print2">प्रिंट २</option>
+            </select>
+        </div>
+        <div class="field-group">
+            <label for="print">कॉपी कलर (3)</label>
+            <select id="print" name="print">
+                <option value="print1">पीकॉक ब्लू</option>
+                <option value="print2">प्रिंट २</option>
+            </select>
+
+          
+            <select id="corner">
+                <option value="print1">परफोरेशन</option>
+                <option value="print2">प्रिंट २</option>
+            </select>
+        </div>
+        <div class="field-group">
+            <label for="print">कॉपी कलर (4)</label>
+            <select id="print" name="print">
+                <option value="print1">पीकॉक ब्लू</option>
+                <option value="print2">प्रिंट २</option>
+            </select>
+
+          
+            <select id="corner">
+                <option value="print1">परफोरेशन</option>
+                <option value="print2">प्रिंट २</option>
+            </select>
+        </div>
+
+
+        <!-- Table part-->
+        <div class="table-section">
+            <div class="table-row table-header">
+                <div class="table-cell">पेपर</div>
+                <div class="table-cell">शीट</div>
+                <div class="table-cell">साईज</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <input type="text" name="paper1" placeholder="पेपर प्रकार 1">
+                </div>
+                <div class="table-cell">
+                    <input type="number" name="sheet1" placeholder="शीट संख्या 1">
+                </div>
+                <div class="table-cell">
+                    <input type="text" name="size1" placeholder="साईज 1">
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <input type="text" name="paper2" placeholder="पेपर प्रकार 2">
+                </div>
+                <div class="table-cell">
+                    <input type="number" name="sheet2" placeholder="शीट संख्या 2">
+                </div>
+                <div class="table-cell">
+                    <input type="text" name="size2" placeholder="आकार 2">
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <input type="text" name="paper3" placeholder="पेपर प्रकार 3">
+                </div>
+                <div class="table-cell">
+                    <input type="number" name="sheet3" placeholder="शीट संख्या 3">
+                </div>
+                <div class="table-cell">
+                    <input type="text" name="size3" placeholder="आकार 3">
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <input type="text" name="paper4" placeholder="पेपर प्रकार 4">
+                </div>
+                <div class="table-cell">
+                    <input type="number" name="sheet4" placeholder="शीट संख्या 4">
+                </div>
+                <div class="table-cell">
+                    <input type="text" name="size4" placeholder="आकार 4">
+                </div>
+            </div>
+        </div>
+        
+       
+
+        <!-- Remark Section -->
+        <div class="section">
+            <div class="field-group large-input">
+                <label for="remark">रिमार्क/नोट</label>
+                <textarea id="remark" name="remark"></textarea>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
+
